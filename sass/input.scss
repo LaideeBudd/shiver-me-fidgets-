@@ -41,6 +41,14 @@ body {
       }
     }
 
+    .desktop-nav-items {
+      display: flex;
+
+      @include media.sm {
+        display: none;
+      }
+    }
+
     #hamburger {
       display: none;
       color: #474747;
@@ -56,6 +64,7 @@ body {
     }
 
     #menu-items {
+      display: none;
       @include media.sm {
         display: none;
         flex-direction: column;

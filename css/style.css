@@ -44,6 +44,14 @@ body nav img {
     width: 7rem;
   }
 }
+body nav .desktop-nav-items {
+  display: flex;
+}
+@media (max-width: 600px) {
+  body nav .desktop-nav-items {
+    display: none;
+  }
+}
 body nav #hamburger {
   display: none;
   color: #474747;
@@ -57,6 +65,9 @@ body nav #hamburger {
     margin-right: 2rem;
     margin-top: 1rem;
   }
+}
+body nav #menu-items {
+  display: none;
 }
 @media (max-width: 600px) {
   body nav #menu-items {
