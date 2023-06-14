@@ -22,6 +22,7 @@ body nav {
     flex-direction: column;
     align-items: flex-start;
     background-color: #cdedf6;
+    padding: 0;
   }
 }
 body nav a {
@@ -41,7 +42,8 @@ body nav img {
 }
 @media (max-width: 600px) {
   body nav img {
-    width: 7rem;
+    width: 8rem;
+    padding: 1rem;
   }
 }
 body nav .desktop-nav-items {
@@ -63,7 +65,7 @@ body nav #hamburger {
     position: absolute;
     right: 0;
     margin-right: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 body nav #menu-items {
@@ -78,7 +80,9 @@ body nav #menu-items {
 }
 @media (max-width: 600px) {
   body nav #menu-items a {
-    padding: 1rem 2rem;
+    padding: 2rem;
+    border-bottom: 2px solid #474747;
+    width: 100vw;
   }
 }
 
