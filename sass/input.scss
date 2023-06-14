@@ -1,0 +1,72 @@
+@use "media-query" as media;
+@use "reset";
+
+@font-face {
+  font-family: "Pirate";
+  src: url(../fonts/PirateKids.ttf);
+}
+
+body {
+  text-decoration: none;
+
+  nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+
+    @include media.sm {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #cdedf6;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 1rem 2rem;
+      font-family: "Pirate";
+      color: #474747;
+      font-size: 1.5rem;
+
+      @include media.sm {
+        padding: 0;
+      }
+    }
+
+    img {
+      width: 10rem;
+
+      @include media.sm {
+        width: 7rem;
+      }
+    }
+
+    #hamburger {
+      display: none;
+      color: #474747;
+      font-size: 3.5rem;
+
+      @include media.sm {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 2rem;
+        margin-top: 1rem;
+      }
+    }
+
+    #menu-items {
+      @include media.sm {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      a {
+        @include media.sm {
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+}

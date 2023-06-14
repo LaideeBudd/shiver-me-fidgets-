@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Pirate";
+  src: url(../fonts/PirateKids.ttf);
+}
+body {
+  text-decoration: none;
+}
+body nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+@media (max-width: 600px) {
+  body nav {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #cdedf6;
+  }
+}
+body nav a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-family: "Pirate";
+  color: #474747;
+  font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+  body nav a {
+    padding: 0;
+  }
+}
+body nav img {
+  width: 10rem;
+}
+@media (max-width: 600px) {
+  body nav img {
+    width: 7rem;
+  }
+}
+body nav #hamburger {
+  display: none;
+  color: #474747;
+  font-size: 3.5rem;
+}
+@media (max-width: 600px) {
+  body nav #hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  body nav #menu-items {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 600px) {
+  body nav #menu-items a {
+    padding: 1rem 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
