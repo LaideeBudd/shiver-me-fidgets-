@@ -12,7 +12,7 @@ body {
   text-decoration: none;
 }
 body nav {
-  position: sticky;
+  position: fixed;
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -63,8 +63,7 @@ body nav #hamburger {
   body nav #hamburger {
     display: block;
     position: absolute;
-    right: 0;
-    margin-right: 2rem;
+    margin-left: 20rem;
     margin-top: 2rem;
   }
 }
@@ -84,6 +83,16 @@ body nav #menu-items {
     border-bottom: 2px solid #474747;
     width: 100vw;
   }
+}
+body header {
+  height: 100vh;
+  background-color: #cdedf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header h1 {
+  font-family: "Pirate";
 }
 
 /*# sourceMappingURL=style.css.map */
