@@ -8,6 +8,7 @@
 
 body {
   text-decoration: none;
+  background-color: #5eb1bf;
 
   nav {
     position: fixed;
@@ -20,6 +21,7 @@ body {
       align-items: flex-start;
       background-color: #cdedf6;
       padding: 0;
+      width: 100vw;
     }
 
     a {
@@ -92,6 +94,71 @@ body {
 
     h1 {
       font-family: "Pirate";
+    }
+  }
+
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-family: "Pirate";
+      font-size: 4rem;
+      text-align: center;
+      line-height: 85%;
+      color: #474747;
+      padding: 5rem 0 2rem 0;
+
+      @include media.sm {
+        font-size: 2.5rem;
+      }
+      span {
+        font-size: 2rem;
+
+        @include media.sm {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .flexbox {
+      align-self: center;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5rem;
+
+      @include media.sm {
+        flex-direction: column;
+      }
+
+      img {
+        background-color: #474747;
+        width: 25rem;
+        height: 25rem;
+        background-size: cover;
+        margin-right: 2rem;
+
+        @include media.sm {
+          margin: 0;
+          width: 20rem;
+          height: 20rem;
+        }
+      }
+
+      p {
+        color: #474747;
+        width: 25rem;
+        font-family: "Odibee Sans";
+        font-size: 1.75rem;
+        margin-left: 2rem;
+
+        @include media.sm {
+          margin: 1rem 0;
+          width: 20rem;
+        }
+      }
     }
   }
 }
