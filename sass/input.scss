@@ -255,5 +255,10 @@ footer {
     font-family: "Pirate";
     font-size: 2rem;
     color: #474747;
+
+    @include media.sm {
+      font-size: 1rem;
+      margin-top: 6rem;
+    }
   }
 }

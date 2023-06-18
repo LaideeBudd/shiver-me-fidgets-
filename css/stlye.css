@@ -260,9 +260,8 @@ footer h3 {
 }
 @media (max-width: 600px) {
   footer h3 {
-    font-size: 1rem;
-    margin-top: 6rem;
+    font-size: 0.5rem;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stlye.css.map */
