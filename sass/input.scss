@@ -185,13 +185,6 @@ body {
       @include media.sm {
         font-size: 2.5rem;
       }
-      span {
-        font-size: 2rem;
-
-        @include media.sm {
-          font-size: 1.5rem;
-        }
-      }
     }
 
     img {
@@ -236,5 +229,15 @@ body {
         }
       }
     }
+  }
+}
+
+#treasure-subheading {
+  font-size: 2rem;
+  font-family: "Pirate";
+  color: #474747;
+
+  @include media.sm {
+    font-size: 1.5rem;
   }
 }

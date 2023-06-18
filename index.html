@@ -55,18 +55,18 @@
     </div>
 
     <div id="treasure">
-      <h1>
-        Look! A treasure chest!
-        <br />
-        <span>If you know the key, type it in below.</span>
-      </h1>
+      <h1 id="treasure-heading">Look! A treasure chest!</h1>
+
+      <h3 id="treasure-subheading">If you know the key, type it in below.</h3>
+
       <img
+        id="chest"
         src="./images/treasurechestclosed.png"
         alt="a closed treasure chest"
       />
       <div class="flexbox">
         <input type="text" id="key" name="key" />
-        <button>Check</button>
+        <button for="key" onclick="openChest()">Check</button>
       </div>
     </div>
 

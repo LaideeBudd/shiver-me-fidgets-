@@ -187,6 +187,16 @@ body #treasure h1 {
     font-size: 2.5rem;
   }
 }
+body #treasure #treasure-subheading {
+  font-size: 2rem;
+  font-family: "Pirate";
+  color: #474747;
+}
+@media (max-width: 600px) {
+  body #treasure #treasure-subheading {
+    font-size: 1.5rem;
+  }
+}
 body #treasure img {
   margin: 4rem;
   width: 40rem;
@@ -233,15 +243,4 @@ body #treasure .flexbox button {
   }
 }
 
-#treasure-subheading {
-  font-size: 2rem;
-  font-family: "Pirate";
-  color: #474747;
-}
-@media (max-width: 600px) {
-  #treasure-subheading {
-    font-size: 1.5rem;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.style.css.map */
