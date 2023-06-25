@@ -19,5 +19,6 @@ const openChest = () => {
     treasureHeading.innerHTML = "Congratulations!";
     treasureSubheading.innerHTML = "You have opened the treasure chest!";
     chest.src = "./images/treasurechest.png";
+    chest.style.marginTop = "8rem";
   }
 };
